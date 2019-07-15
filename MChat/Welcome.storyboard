@@ -18,31 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NX1-k1-htQ">
-                                <rect key="frame" x="132" y="202" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign in with Facebook"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NX1-k1-htQ">
+                                <rect key="frame" x="20" y="155" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.45458388329999999" green="0.84151858089999998" blue="0.98433011770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jRw-m1-TCp"/>
+                                </constraints>
+                                <state key="normal" title="Sign in with Facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INc-gD-cqd">
-                                <rect key="frame" x="141" y="254" width="132" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign in with Google"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INc-gD-cqd">
+                                <rect key="frame" x="20" y="230" width="374" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dzd-6A-5P9"/>
+                                </constraints>
+                                <state key="normal" title="Sign in with Google">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvd-0l-wkc">
-                                <rect key="frame" x="132" y="448" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create a new account"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvd-0l-wkc">
+                                <rect key="frame" x="20" y="351" width="374" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0fp-qQ-lDA"/>
+                                </constraints>
+                                <state key="normal" title="Create a new account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghG-T5-ffV">
-                                <rect key="frame" x="186" y="358" width="19" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghG-T5-ffV">
+                                <rect key="frame" x="0.0" y="305" width="414" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terms of Service." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17h-bd-BPs">
-                                <rect key="frame" x="140" y="510" width="134" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Service." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17h-bd-BPs">
+                                <rect key="frame" x="20" y="426" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -57,8 +70,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GXN-ia-ctc" firstAttribute="leading" secondItem="psj-qL-lsV" secondAttribute="leading" constant="20" id="2HC-zJ-2P5"/>
+                            <constraint firstItem="NX1-k1-htQ" firstAttribute="top" secondItem="GXN-ia-ctc" secondAttribute="bottom" constant="40" id="5Pq-fH-Ymy"/>
+                            <constraint firstItem="INc-gD-cqd" firstAttribute="leading" secondItem="psj-qL-lsV" secondAttribute="leading" constant="20" id="BQm-Xa-4fW"/>
+                            <constraint firstItem="NX1-k1-htQ" firstAttribute="leading" secondItem="psj-qL-lsV" secondAttribute="leading" constant="20" id="CCr-wr-PmA"/>
+                            <constraint firstItem="psj-qL-lsV" firstAttribute="trailing" secondItem="17h-bd-BPs" secondAttribute="trailing" constant="20" id="F9I-RO-JZG"/>
                             <constraint firstItem="psj-qL-lsV" firstAttribute="trailing" secondItem="GXN-ia-ctc" secondAttribute="trailing" constant="20" id="Fq7-mC-TAY"/>
+                            <constraint firstItem="17h-bd-BPs" firstAttribute="leading" secondItem="psj-qL-lsV" secondAttribute="leading" constant="20" id="Imy-ng-JYI"/>
+                            <constraint firstItem="lvd-0l-wkc" firstAttribute="top" secondItem="ghG-T5-ffV" secondAttribute="bottom" constant="25" id="Nib-3L-weV"/>
+                            <constraint firstItem="psj-qL-lsV" firstAttribute="trailing" secondItem="ghG-T5-ffV" secondAttribute="trailing" id="P35-SY-c7m"/>
                             <constraint firstItem="GXN-ia-ctc" firstAttribute="top" secondItem="psj-qL-lsV" secondAttribute="top" constant="50" id="V7n-4B-0Oo"/>
+                            <constraint firstItem="psj-qL-lsV" firstAttribute="trailing" secondItem="INc-gD-cqd" secondAttribute="trailing" constant="20" id="Zet-Wb-3ih"/>
+                            <constraint firstItem="ghG-T5-ffV" firstAttribute="leading" secondItem="psj-qL-lsV" secondAttribute="leading" id="aZC-EO-qfD"/>
+                            <constraint firstItem="ghG-T5-ffV" firstAttribute="top" secondItem="INc-gD-cqd" secondAttribute="bottom" constant="25" id="b70-cg-LH8"/>
+                            <constraint firstItem="17h-bd-BPs" firstAttribute="top" secondItem="lvd-0l-wkc" secondAttribute="bottom" constant="25" id="jkv-CO-RWE"/>
+                            <constraint firstItem="psj-qL-lsV" firstAttribute="trailing" secondItem="lvd-0l-wkc" secondAttribute="trailing" constant="20" id="qcc-t6-AfJ"/>
+                            <constraint firstItem="INc-gD-cqd" firstAttribute="top" secondItem="NX1-k1-htQ" secondAttribute="bottom" constant="25" id="tlb-Lu-5c5"/>
+                            <constraint firstItem="psj-qL-lsV" firstAttribute="trailing" secondItem="NX1-k1-htQ" secondAttribute="trailing" constant="20" id="vMF-HF-1Gs"/>
+                            <constraint firstItem="lvd-0l-wkc" firstAttribute="leading" secondItem="psj-qL-lsV" secondAttribute="leading" constant="20" id="xaW-az-Qfv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="psj-qL-lsV"/>
                     </view>
