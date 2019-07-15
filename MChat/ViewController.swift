@@ -68,6 +68,35 @@ class ViewController: UIViewController {
         termsOfServiceLabel.attributedText = attributedTermsText
         termsOfServiceLabel.numberOfLines = 0
         
+        // кастомизация signInFacebookButton
+        signInFacebookButton.setTitle("Sign in Facebook", for: UIControl.State.normal)
+        signInFacebookButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        signInFacebookButton.backgroundColor = UIColor(red: 58/255, green: 85/255, blue: 159/255, alpha: 1)
+        signInFacebookButton.layer.cornerRadius = 5
+        signInFacebookButton.clipsToBounds = true
+        signInFacebookButton.setImage(UIImage(named: "icon-facebook"), for: UIControl.State.normal)
+        signInFacebookButton.imageView?.contentMode = .scaleAspectFit
+        signInFacebookButton.tintColor = .white
+        signInFacebookButton.imageEdgeInsets = UIEdgeInsets(top: 12, left: -15, bottom: 12, right: 0)
+        
+        // кастомизация signInFacebookButton
+        signInGoogleButton.setTitle("Sign in Google", for: UIControl.State.normal)
+        signInGoogleButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        signInGoogleButton.backgroundColor = UIColor(red: 223/255, green: 74/255, blue: 50/255, alpha: 1)
+        signInGoogleButton.layer.cornerRadius = 5
+        signInGoogleButton.clipsToBounds = true
+        signInGoogleButton.setImage(UIImage(named: "icon-google"), for: UIControl.State.normal)
+        signInGoogleButton.imageView?.contentMode = .scaleAspectFit
+        signInGoogleButton.tintColor = .white
+        signInGoogleButton.imageEdgeInsets = UIEdgeInsets(top: 12, left: -35, bottom: 12, right: 0)
+        
+        // кастомизация createAccountButton
+        createAccountButton.setTitle("Create a new account", for: UIControl.State.normal)
+        createAccountButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        createAccountButton.backgroundColor = UIColor.black
+        createAccountButton.layer.cornerRadius = 5
+        createAccountButton.clipsToBounds = true
+        
     }
 }
 
