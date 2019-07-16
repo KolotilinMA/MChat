@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gLH-SC-iet">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DwL-zB-ajU">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -47,6 +47,9 @@
                                 <state key="normal" title="Create a new account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Xfi-4g-5cf" kind="show" id="prI-Z2-Ely"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghG-T5-ffV">
                                 <rect key="frame" x="0.0" y="305" width="414" height="21"/>
@@ -90,6 +93,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="psj-qL-lsV"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DoL-wD-0AS"/>
                     <connections>
                         <outlet property="createAccountButton" destination="lvd-0l-wkc" id="FRV-iv-Gm4"/>
                         <outlet property="orLabel" destination="ghG-T5-ffV" id="n92-Mg-Kdw"/>
@@ -101,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="18m-c3-b7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="65" y="97"/>
+            <point key="canvasLocation" x="973.91304347826099" y="96.428571428571431"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="tXJ-NJ-a8K">
@@ -114,6 +118,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yw8-a4-aFl">
                                 <rect key="frame" x="20" y="44" width="15.5" height="22"/>
                                 <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="dismissAcdion:" destination="Xfi-4g-5cf" eventType="touchUpInside" id="tbD-nW-Ujo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckb-FI-Tbl">
                                 <rect key="frame" x="20" y="86" width="60.5" height="21"/>
@@ -205,6 +212,9 @@
                                     <constraint firstAttribute="height" constant="30" id="dQU-iN-HYD"/>
                                 </constraints>
                                 <state key="normal" title="Sing In"/>
+                                <connections>
+                                    <segue destination="Uy3-SC-7jD" kind="show" id="HsY-3h-JIf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -248,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gt5-kC-MVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902.89855072463774" y="95.758928571428569"/>
+            <point key="canvasLocation" x="1717" y="96"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="I7Y-Tb-FZX">
@@ -319,12 +329,18 @@
                                     <constraint firstAttribute="height" constant="30" id="7Fp-lf-vAr"/>
                                 </constraints>
                                 <state key="normal" title="Sing Up"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="Uy3-SC-7jD" eventType="touchUpInside" id="exf-7K-lXm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrD-ZV-IAy">
                                 <rect key="frame" x="20" y="812" width="374" height="30"/>
                                 <state key="normal" title="Forgot Password">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="gLH-SC-iet" kind="show" id="zpJ-bU-tpo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -361,7 +377,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gp5-kR-bmV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1706" y="96"/>
+            <point key="canvasLocation" x="2452" y="96"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="fN8-K4-2JA">
@@ -374,6 +390,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64Y-EK-dtb">
                                 <rect key="frame" x="20" y="44" width="15.5" height="22"/>
                                 <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="gLH-SC-iet" eventType="touchUpInside" id="67s-eg-IGE"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfr-kf-Vdv">
                                 <rect key="frame" x="20" y="106" width="374" height="50"/>
@@ -425,7 +444,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Tv-wK-fI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2494" y="96"/>
+            <point key="canvasLocation" x="3175" y="96"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7zE-oQ-X1S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="DwL-zB-ajU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="szM-jo-WKh">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9x7-Am-bYv" kind="relationship" relationship="rootViewController" id="7WW-jT-21k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3V-Mu-Fm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="96"/>
         </scene>
     </scenes>
     <resources>

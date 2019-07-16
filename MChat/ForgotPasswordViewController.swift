@@ -24,4 +24,7 @@ class ForgotPasswordViewController: UIViewController {
         setupEmailTextField()
         setupResetButton()
     }
+    @IBAction func dismissAction(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
 }
