@@ -15,6 +15,10 @@
 		878AAC0A22DCF724004F9BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878AAC0822DCF724004F9BC0 /* LaunchScreen.storyboard */; };
 		878AAC1222DCF81B004F9BC0 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878AAC1122DCF81B004F9BC0 /* Welcome.storyboard */; };
 		87ECD7EA22DE484A005B7329 /* SingUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECD7E922DE484A005B7329 /* SingUpViewController+UI.swift */; };
+		87ECD7EC22DE538A005B7329 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECD7EB22DE538A005B7329 /* SignInViewController.swift */; };
+		87ECD7EE22DE54C9005B7329 /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECD7ED22DE54C9005B7329 /* SignInViewController+UI.swift */; };
+		87ECD7F022DE5952005B7329 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECD7EF22DE5952005B7329 /* ForgotPasswordViewController.swift */; };
+		87ECD7F222DE5973005B7329 /* ForgotPasswordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECD7F122DE5973005B7329 /* ForgotPasswordViewController+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		878AAC0B22DCF724004F9BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		878AAC1122DCF81B004F9BC0 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		87ECD7E922DE484A005B7329 /* SingUpViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SingUpViewController+UI.swift"; sourceTree = "<group>"; };
+		87ECD7EB22DE538A005B7329 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		87ECD7ED22DE54C9005B7329 /* SignInViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
+		87ECD7EF22DE5952005B7329 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		87ECD7F122DE5973005B7329 /* ForgotPasswordViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPasswordViewController+UI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,10 @@
 				8757B1B222DD1E9300AED424 /* ViewController+UI.swift */,
 				8757B1B422DD220E00AED424 /* SignUpViewController.swift */,
 				87ECD7E922DE484A005B7329 /* SingUpViewController+UI.swift */,
+				87ECD7EB22DE538A005B7329 /* SignInViewController.swift */,
+				87ECD7ED22DE54C9005B7329 /* SignInViewController+UI.swift */,
+				87ECD7EF22DE5952005B7329 /* ForgotPasswordViewController.swift */,
+				87ECD7F122DE5973005B7329 /* ForgotPasswordViewController+UI.swift */,
 				878AAC1122DCF81B004F9BC0 /* Welcome.storyboard */,
 				878AAC0622DCF724004F9BC0 /* Assets.xcassets */,
 				878AAC0822DCF724004F9BC0 /* LaunchScreen.storyboard */,
@@ -144,8 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87ECD7F022DE5952005B7329 /* ForgotPasswordViewController.swift in Sources */,
 				8757B1B322DD1E9300AED424 /* ViewController+UI.swift in Sources */,
+				87ECD7EE22DE54C9005B7329 /* SignInViewController+UI.swift in Sources */,
 				878AAC0222DCF722004F9BC0 /* ViewController.swift in Sources */,
+				87ECD7F222DE5973005B7329 /* ForgotPasswordViewController+UI.swift in Sources */,
+				87ECD7EC22DE538A005B7329 /* SignInViewController.swift in Sources */,
 				8757B1B522DD220E00AED424 /* SignUpViewController.swift in Sources */,
 				878AAC0022DCF722004F9BC0 /* AppDelegate.swift in Sources */,
 				87ECD7EA22DE484A005B7329 /* SingUpViewController+UI.swift in Sources */,

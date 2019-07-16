@@ -1,5 +1,5 @@
 //
-//  SignUpViewController.swift
+//  SignInViewController.swift
 //  MChat
 //
 //  Created by Михаил on 16/07/2019.
@@ -8,33 +8,27 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
-    @IBOutlet var titleTextLabel: UILabel!
-    @IBOutlet var avatarImage: UIImageView!
-    @IBOutlet var fullnameContainerView: UIView!
-    @IBOutlet var fullnameTextField: UITextField!
+class SignInViewController: UIViewController {
+    @IBOutlet var signInLabel: UILabel!
     @IBOutlet var emailContainerView: UIView!
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordContainerView: UIView!
     @IBOutlet var passwordTextField: UITextField!
-    @IBOutlet var signUpButton: UIButton!
     @IBOutlet var signInButton: UIButton!
+    @IBOutlet var signUpButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupUI()
     }
     
     func setupUI() {
         
         setupTitleLabel()
-        setupAvatar()
-        setupFullnameTextField()
         setupEmailTextField()
         setupPasswordTextField()
-        setupSignUpButton()
         setupSignInButton()
+        setupSignUpButton()
     }
-
 }
