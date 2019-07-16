@@ -1,0 +1,6 @@
+framework module Pods_MChat {
+  umbrella header "Pods-MChat-umbrella.h"
+
+  export *
+  module * { export * }
+}

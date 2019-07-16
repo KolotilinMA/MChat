@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>765100603776-02qe4ju8ifto9lsa8vea2qllc61lb49r.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.765100603776-02qe4ju8ifto9lsa8vea2qllc61lb49r</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCSGP5ti1m0eRUFHjCNYij5hFJVHS3-_bc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>765100603776</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kolotilinma.MChat</string>
+	<key>PROJECT_ID</key>
+	<string>mchat-61373</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mchat-61373.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:765100603776:ios:63ca43f87a733597</string>
+	<key>DATABASE_URL</key>
+	<string>https://mchat-61373.firebaseio.com</string>
+</dict>
+</plist>
