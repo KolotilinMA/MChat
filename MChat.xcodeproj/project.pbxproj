@@ -14,6 +14,7 @@
 		878AAC0722DCF724004F9BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878AAC0622DCF724004F9BC0 /* Assets.xcassets */; };
 		878AAC0A22DCF724004F9BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878AAC0822DCF724004F9BC0 /* LaunchScreen.storyboard */; };
 		878AAC1222DCF81B004F9BC0 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 878AAC1122DCF81B004F9BC0 /* Welcome.storyboard */; };
+		87ECD7EA22DE484A005B7329 /* SingUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ECD7E922DE484A005B7329 /* SingUpViewController+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		878AAC0922DCF724004F9BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		878AAC0B22DCF724004F9BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		878AAC1122DCF81B004F9BC0 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		87ECD7E922DE484A005B7329 /* SingUpViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SingUpViewController+UI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,9 @@
 				878AABFF22DCF722004F9BC0 /* AppDelegate.swift */,
 				878AAC0122DCF722004F9BC0 /* ViewController.swift */,
 				8757B1B222DD1E9300AED424 /* ViewController+UI.swift */,
-				878AAC1122DCF81B004F9BC0 /* Welcome.storyboard */,
 				8757B1B422DD220E00AED424 /* SignUpViewController.swift */,
+				87ECD7E922DE484A005B7329 /* SingUpViewController+UI.swift */,
+				878AAC1122DCF81B004F9BC0 /* Welcome.storyboard */,
 				878AAC0622DCF724004F9BC0 /* Assets.xcassets */,
 				878AAC0822DCF724004F9BC0 /* LaunchScreen.storyboard */,
 				878AAC0B22DCF724004F9BC0 /* Info.plist */,
@@ -145,6 +148,7 @@
 				878AAC0222DCF722004F9BC0 /* ViewController.swift in Sources */,
 				8757B1B522DD220E00AED424 /* SignUpViewController.swift in Sources */,
 				878AAC0022DCF722004F9BC0 /* AppDelegate.swift in Sources */,
+				87ECD7EA22DE484A005B7329 /* SingUpViewController+UI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
