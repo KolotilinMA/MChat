@@ -205,6 +205,9 @@
                                     <constraint firstAttribute="height" constant="50" id="jgl-1v-9fO"/>
                                 </constraints>
                                 <state key="normal" title="Sing Up"/>
+                                <connections>
+                                    <action selector="signUpButtonDidTapped:" destination="Xfi-4g-5cf" eventType="touchUpInside" id="57o-rB-chp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZc-ng-CG9">
                                 <rect key="frame" x="20" y="587" width="374" height="30"/>
