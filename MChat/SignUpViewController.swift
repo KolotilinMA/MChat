@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import FirebaseStorage
 
 class SignUpViewController: UIViewController {
     @IBOutlet var titleTextLabel: UILabel!
@@ -21,6 +22,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var signUpButton: UIButton!
     @IBOutlet var signInButton: UIButton!
+    
+    var image: UIImage? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,26 +45,52 @@ class SignUpViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func signUpButtonDidTapped(_ sender: Any) {
-        Auth.auth().createUser(withEmail: "test1@mail.ru", password: "123456") { (authDataResult, error) in
+        
+        guard let imageSelected = self.image else {
+            print("Avatar is nil")
+            return
+        }
+        
+        guard let imageData = imageSelected.jpegData(compressionQuality: 0.4) else { return }
+        
+        Auth.auth().createUser(withEmail: "test2@mail.ru", password: "123456") { (authDataResult, error) in
             if error != nil {
                 print(error!.localizedDescription)
                 return
             }
             if let authData = authDataResult {
                 print(authData.user.email)
-                let dict: Dictionary<String, Any> = [
+                var dict: Dictionary<String, Any> = [
                     "uid": authData.user.uid,
                     "email": authData.user.email,
                     "profileImageURL": "",
                     "status": "Welcome to MChat"
                 ]
                 
-                Database.database().reference().child("users")
-                    .child(authData.user.uid).updateChildValues(dict, withCompletionBlock: { (error, ref) in
-                        if error == nil {
-                            print("Done")
+                let storageRef = Storage.storage().reference(forURL: "gs://mchat-61373.appspot.com")
+                let storageProfileRef = storageRef.child("profile").child(authData.user.uid)
+                let metaData = StorageMetadata()
+                
+                metaData.contentType = "image/jpg"
+                storageProfileRef.putData(imageData, metadata: metaData, completion: { (storageMetaData, error) in
+                    if error != nil {
+                        print(error?.localizedDescription)
+                        return
+                    }
+                    
+                    storageProfileRef.downloadURL(completion: { (url, error) in
+                        if let metaImageUrl = url?.absoluteString {
+                            dict["profileImageURL"] = metaImageUrl
+                            
+                            Database.database().reference().child("users")
+                                .child(authData.user.uid).updateChildValues(dict, withCompletionBlock: { (error, ref) in
+                                    if error == nil {
+                                        print("Done")
+                                    }
+                                })
                         }
                     })
+                })
             }
         }
     }
